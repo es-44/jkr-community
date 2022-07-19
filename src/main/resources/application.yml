@@ -3,7 +3,7 @@ spring:
     stream:
       bindings:
         community-out-0:
-          destination: community-topic
+          destination: community-join-topic
       kafka:
         binder:
           brokers: localhost:9092

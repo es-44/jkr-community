@@ -13,8 +13,8 @@ public class CommunityController {
 
     private final CommunityService communityService;
 
-    @PostMapping("/{communityId}/member")
-    public void join(@PathVariable String communityId) {
+    @GetMapping("/join")
+    public void join() {
         communityService.join();
     }
 }
